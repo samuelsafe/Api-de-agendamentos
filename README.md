@@ -4,7 +4,7 @@ API REST desenvolvida com Java e Spring Boot para gerenciamento de agendamentos.
 
 ## 🚀 Tecnologias utilizadas
 
-- Java 17
+- Java 25
 - Spring Boot
 - Spring Data JPA
 - Banco de dados H2 (em memória)
