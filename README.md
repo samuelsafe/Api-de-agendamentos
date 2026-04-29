@@ -51,3 +51,38 @@ POST /agendamentos
 ```
 
 ### Listar todos
+GET /agendamentos
+
+### Buscar por ID
+GET /agendamentos/{id}
+
+### Cancelar agendamento
+PATCH /agendamentos/{id}/cancelar
+
+## 📦 Exemplo de resposta
+
+```json
+{
+    "id": 1,
+    "nomeCliente": "Samuel Ramos",
+    "descricao": "Consulta médica",
+    "dataHora": "2026-05-10T14:00:00",
+    "status": "ATIVO"
+}
+```
+
+## 🛡️ Tratamento de erros
+
+Erros retornam respostas padronizadas:
+
+```json
+{
+    "status": 404,
+    "erro": "Agendamento não encontrado! ID: 99"
+}
+```
+
+## 👨‍💻 Autor
+
+Samuel Ferreira Ramos  
+[LinkedIn](www.linkedin.com/in/samuel-ferreira-7b2898280) • [GitHub](https://github.com/samuelsafe)
